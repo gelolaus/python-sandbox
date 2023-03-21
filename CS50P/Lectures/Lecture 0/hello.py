@@ -1,8 +1,14 @@
-# Asks the user's name
-name = input("What's your name? ").strip().title()
+# Defines the main part of the program
+def main():
+    # Asks the user's name
+    name = input("What's your name? ").strip().title()
+    # Greets the user together with their name
+    hello(f"{name}!")
 
-# Splits the user's name into first name and last name
-first_name, last_name = name.split(" ")
 
-# Greets the user together with their name
-print(f"Hey, {first_name}!")
+# Defines the hello() function
+def hello(name="World!"):
+    print("Hello,", name)
+
+
+main()
