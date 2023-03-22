@@ -6,7 +6,7 @@ def main():
     hello(f"{name}!")
 
 
-# Defines the hello() function
+# Defines the hello function
 def hello(name="World!"):
     print("Hello,", name)
 
